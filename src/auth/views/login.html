@@ -1,0 +1,11 @@
+<div style="margin: 20px auto; max-width: 600px; width: 340px">
+<h2>Log-in to your account</h2>
+  <div ng-model = 'errors'></div>
+  <form >
+    <input type="text" name="email" ng-model = 'username' placeholder="E-mail address"><br/>
+    <input type="password" ng-model = 'password' name="password" placeholder="Password"><br/>
+    <button  ng-click = 'submit()'>Login</button>
+  </form>
+<br/><br/>
+<div> <a ui-sref="auth.signup">Sign up</a></div>
+</div>
