@@ -45,6 +45,7 @@ checkout http://localhost and the project should be up and running.
   - to change the menu, inject `menuService` in any controller. 
   - Elements can be added in menu by `menuService.add(item)`.
   - Entire menu can be replaced by `menuService.setMenu(new_menu)`
+  - Menu is displayed and controlled by a directive called `main-menu`
 
 ### Modules
 

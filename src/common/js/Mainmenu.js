@@ -24,6 +24,15 @@ define( [],
       menuService.add({name :"Menu 3"})
       $scope.menu = menuService.getItems();
     }])
+    .directive("mainMenu", function(){
+      return {
+        restrict:'E',
+        controller:function(){
+          
+        },
+        template:'<ul class="menu" ng-controller = "MenuController"><li>Logo</li><li ng-repeat="m in menu"><a>{{ m.name }}</a></li></ul>'
+      }
+    })
    
   
 
