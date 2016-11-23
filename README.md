@@ -7,6 +7,7 @@ basic structure to kickstart an angular project. modular with signup/login .
   
     server{
       listen *:80;
+      
        location / {
         alias <path to project>/src/;
         index base.html;
@@ -39,6 +40,11 @@ checkout http://localhost and the project should be up and running.
   - bootstraps the project.
 
 
+### Menu
+  - Menu is managed by menuApp located at `/common/js/mainmenu.js`
+  - to change the menu, inject `menuService` in any controller. 
+  - Elements can be added in menu by `menuService.add(item)`.
+  - Entire menu can be replaced by `menuService.setMenu(new_menu)`
 
 ### Modules
 
@@ -59,3 +65,5 @@ Each module contains:
  - contains login/ signup and authentication related code
  - Services contain http calls and definations
  - views contains HTML templates
+ - 
+ 

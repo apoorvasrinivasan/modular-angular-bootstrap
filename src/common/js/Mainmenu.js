@@ -21,7 +21,7 @@ define( [],
         {name : "Menu 1"},
         {name : "Menu 2"}
       ])
-      menuService.add({name :"32"})
+      menuService.add({name :"Menu 3"})
       $scope.menu = menuService.getItems();
     }])
    
